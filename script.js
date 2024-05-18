@@ -4,8 +4,8 @@
     let todoListArray = [];
     
     const form = document.querySelector(".form");
-    const input = form.querySelector(".form_input");
-    const ul = document.querySelector(".todoList");
+    const input = document.querySelector(".form_input");
+    const ul = document.querySelector(".todolist");
 
     form.addEventListener('submit', e => {
       e.preventDefault();
@@ -26,10 +26,10 @@
     });
   
     function addItemToDOM(itemId, todoItem) {
-      const li = document.createElement('li')
-      li.setAttribute("data-id", itemId);
-      li.innerText = todoItem
-      ul.appendChild(li);
+      const listItem = document.createElement('li')
+      listItem.setAttribute("data-id", itemId);
+      listItem.innerText = todoItem
+      ul.append(listItem);
     }
   
     function addItemToArray(itemId, todoItem) {
