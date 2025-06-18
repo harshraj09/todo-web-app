@@ -14,3 +14,5 @@ A simple and efficient To-Do List application built using HTML, CSS, and JavaScr
 HTML5 – for structuring the layout
 
 CSS3 – for responsive and clean styling
+
+Vanilla JavaScript – for dynamic task management and DOM manipulation
